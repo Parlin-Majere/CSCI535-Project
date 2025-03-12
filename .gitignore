@@ -1,3 +1,6 @@
 downloaded_file.zip
 downloaded_file/
 pulled_from_UR-FUNNY/
+dataset/
+*.sh
+*.out

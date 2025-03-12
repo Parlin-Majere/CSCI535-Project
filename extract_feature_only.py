@@ -22,11 +22,11 @@ for filename in os.listdir(input_dir):
   #print(o.last_hidden_state.shape)
   #print(o.extract_features.shape)
 
-  pkl_name = '../../../../scratch1/jiaqilu/CSCI535/CSCI535-Project/dataset/urfunny2_audios_pkl/'+filename.split('.')[0] + '.pkl'
+  pkl_name = '../../../../scratch1/jiaqilu/CSCI535/CSCI535-Project/dataset/urfunny2_audios_feature_pkl/'+filename.split('.')[0] + '.pkl'
   #pt_name = './dataset/urfunny2_audios_pt/'+filename.split('.')[0] + '.pt'
   #torch.save(o,pt_name)
   with open(pkl_name,'wb') as f:
-    pickle.dump(o.last_hidden_state,f)
+    pickle.dump(o.extract_features,f)
 
   #pt_data = torch.load(pt_name)
   #with open(pkl_name,'rb') as f:
